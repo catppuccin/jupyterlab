@@ -115,10 +115,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--md-grey-400);
-  --jp-border-color1: var(--md-grey-400);
-  --jp-border-color2: var(--md-grey-300);
-  --jp-border-color3: var(--md-grey-200);
+  --jp-border-color0: var(--ctp-mocha-crust);
+  --jp-border-color1: var(--ctp-mocha-crust);
+  --jp-border-color2: var(--ctp-mocha-crust);
+  --jp-border-color3: var(--ctp-mocha-crust);
   --jp-border-radius: 2px;
 
   /* UI Fonts
@@ -146,9 +146,9 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Defaults use Material Design specification */
   --jp-ui-font-color0: var(--ctp-mocha-text);
-  --jp-ui-font-color1: var(--ctp-mocha-subtext0);
+  --jp-ui-font-color1: var(--ctp-mocha-text);
   --jp-ui-font-color2: var(--ctp-mocha-subtext1);
-  --jp-ui-font-color3: var(--ctp-mocha-overlay2);
+  --jp-ui-font-color3: var(--ctp-mocha-subtext0);
 
   /*
    * Use these against the brand/accent/warn/error colors.
@@ -220,11 +220,11 @@ all of MD as it is not optimized for dense, information rich UIs.
    * The following are the main layout colors use in JupyterLab. In a light
    * theme these would go from light to dark.
    */
-  --jp-layout-color0: var(--ctp-mocha-base); 
-  --jp-layout-color1: var(--ctp-mocha-surface0); 
-  --jp-layout-color2: var(--ctp-mocha-surface1); 
-  --jp-layout-color3: var(--ctp-mocha-surface2); 
-  --jp-layout-color4: var(--ctp-mocha-overlay0);
+  --jp-layout-color0: var(--ctp-mocha-base);
+  --jp-layout-color1: var(--ctp-mocha-mantle);
+  --jp-layout-color2: var(--ctp-mocha-crust);
+  --jp-layout-color3: var(--ctp-mocha-crust);
+  --jp-layout-color4: var(--ctp-mocha-crust);
 
   /* Inverse Layout
    *
@@ -232,18 +232,18 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from dark to light.
    */
 
-  --jp-inverse-layout-color0: var(--ctp-mocha-subtext1);
-  --jp-inverse-layout-color1: var(--ctp-mocha-subtext0);
-  --jp-inverse-layout-color2: var(--ctp-mocha-overlay2);
-  --jp-inverse-layout-color3: var(--ctp-mocha-overlay1);
-  --jp-inverse-layout-color4: var(--ctp-mocha-overlay0);
+  --jp-inverse-layout-color0: var(--ctp-mocha-surface0);
+  --jp-inverse-layout-color1: var(--ctp-mocha-surface1);
+  --jp-inverse-layout-color2: var(--ctp-mocha-surface1);
+  --jp-inverse-layout-color3: var(--ctp-mocha-surface2);
+  --jp-inverse-layout-color4: var(--ctp-mocha-surface2);
 
   /* Brand/accent */
  
-  --jp-brand-color0: rgba(245, 224, 220, 1);
-  --jp-brand-color1: rgba(245, 224, 220, 0.80);
-  --jp-brand-color2: rgba(245, 224, 220, 0.60);
-  --jp-brand-color3: rgba(245, 224, 220, 0.40);
+  --jp-brand-color0: var(--ctp-mocha-mauve);
+  --jp-brand-color1: var(--ctp-mocha-mauve);
+  --jp-brand-color2: var(--ctp-mocha-mauve);
+  --jp-brand-color3: var(--ctp-mocha-mauve);
   --jp-accent-color0: rgba(166, 227, 161, 1);
   --jp-accent-color1: rgba(166, 227, 161, 0.80);
   --jp-accent-color2: rgba(166, 227, 161, 0.60);
