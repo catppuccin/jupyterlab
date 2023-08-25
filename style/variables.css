@@ -382,13 +382,13 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* User colors */
 
-  --jp-collaborator-color1: #ad4a00;
-  --jp-collaborator-color2: #7b6a00;
-  --jp-collaborator-color3: #007e00;
-  --jp-collaborator-color4: #008772;
-  --jp-collaborator-color5: #0079b9;
-  --jp-collaborator-color6: #8b45c6;
-  --jp-collaborator-color7: #be208b;
+  --jp-collaborator-color1: rgba(var(--ctp-mocha-red), 0.60);
+  --jp-collaborator-color2: rgba(var(--ctp-mocha-yellow), 0.60);
+  --jp-collaborator-color3: rgba(var(--ctp-mocha-green), 0.60);
+  --jp-collaborator-color4: rgba(var(--ctp-mocha-teal), 0.60);
+  --jp-collaborator-color5: rgba(var(--ctp-mocha-blue), 0.60);
+  --jp-collaborator-color6: rgba(var(--ctp-mocha-mauve), 0.60);
+  --jp-collaborator-color7: rgba(var(--ctp-mocha-pink), 0.60);
 
   /* File or activity icons and switch semantic variables */
 
