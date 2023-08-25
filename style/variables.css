@@ -251,22 +251,22 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* State colors (warn, error, success, info) */
 
-  --jp-warn-color0: var(--md-orange-700);
-  --jp-warn-color1: var(--md-orange-500);
-  --jp-warn-color2: var(--md-orange-300);
-  --jp-warn-color3: var(--md-orange-100);
-  --jp-error-color0: var(--md-red-700);
-  --jp-error-color1: var(--md-red-500);
-  --jp-error-color2: var(--md-red-300);
-  --jp-error-color3: var(--md-red-100);
-  --jp-success-color0: var(--md-green-700);
-  --jp-success-color1: var(--md-green-500);
-  --jp-success-color2: var(--md-green-300);
-  --jp-success-color3: var(--md-green-100);
-  --jp-info-color0: var(--md-cyan-700);
-  --jp-info-color1: var(--md-cyan-500);
-  --jp-info-color2: var(--md-cyan-300);
-  --jp-info-color3: var(--md-cyan-100);
+  --jp-warn-color0: hsl(from var(--ctp-mocha-peach) h s calc(l - 20%));
+  --jp-warn-color1: hsl(from var(--ctp-mocha-peach) h s calc(l - 10%));
+  --jp-warn-color2: var(--ctp-mocha-peach);
+  --jp-warn-color3: hsl(from var(--ctp-mocha-peach) h s calc(l + 10%));
+  --jp-error-color0: hsl(from var(--ctp-mocha-red) h s calc(l - 20%));
+  --jp-error-color1: hsl(from var(--ctp-mocha-red) h s calc(l - 10%));
+  --jp-error-color2: var(--ctp-mocha-red);
+  --jp-error-color3: hsl(from var(--ctp-mocha-red) h s calc(l + 10%));
+  --jp-success-color0: hsl(from var(--ctp-mocha-green) h s calc(l - 20%));
+  --jp-success-color1: hsl(from var(--ctp-mocha-green) h s calc(l - 10%));
+  --jp-success-color2: var(--ctp-mocha-green);
+  --jp-success-color3: hsl(from var(--ctp-mocha-green) h s calc(l + 10%));
+  --jp-info-color0: hsl(from var(--ctp-mocha-teal) h s calc(l - 20%));
+  --jp-info-color1: hsl(from var(--ctp-mocha-teal) h s calc(l - 10%));
+  --jp-info-color2: var(--ctp-mocha-teal);
+  --jp-info-color3: hsl(from var(--ctp-mocha-teal) h s calc(l + 10%));
 
   /* Cell specific styles */
 
