@@ -400,11 +400,11 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-json-icon-color: var(--ctp-mocha-peach);
   --jp-console-icon-background-color: var(--ctp-mocha-blue);
   --jp-console-icon-color: var(--ctp-mocha-text);
-  --jp-terminal-icon-background-color: var(--ctp-mocha-crust);
+  --jp-terminal-icon-background-color: var(--ctp-mocha-surface2);
   --jp-terminal-icon-color: var(--ctp-mocha-text);
-  --jp-text-editor-icon-color: var(--ctp-mocha-crust);
-  --jp-inspector-icon-color: var(--ctp-mocha-crust);
-  --jp-switch-color: var(--ctp-mocha-mantle);
+  --jp-text-editor-icon-color: var(--ctp-mocha-subtext0);
+  --jp-inspector-icon-color: var(--ctp-mocha-subtext0);
+  --jp-switch-color: var(--ctp-mocha-subtext1);
   --jp-switch-true-position-color: var(--ctp-mocha-peach);
   --jp-switch-cursor-color: rgba(0, 0, 0, 0.8);
 
