@@ -349,9 +349,9 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* General editor styles */
 
-  --jp-editor-selected-background: var(--ctp-mocha-base);
-  --jp-editor-selected-focused-background: var(--ctp-mocha-crust);
-  --jp-editor-cursor-color: var(--jp-ui-font-color0);
+  --jp-editor-selected-background: var(--ctp-mocha-surface1);
+  --jp-editor-selected-focused-background: var(--ctp-mocha-surface2);
+  --jp-editor-cursor-color: var(--ctp-mocha-rosewater);
 
   /* Code mirror specific styles */
 
