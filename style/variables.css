@@ -232,22 +232,22 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from dark to light.
    */
 
-  --jp-inverse-layout-color0: var(--ctp-mocha-surface0);
-  --jp-inverse-layout-color1: var(--ctp-mocha-surface1);
-  --jp-inverse-layout-color2: var(--ctp-mocha-surface1);
-  --jp-inverse-layout-color3: var(--ctp-mocha-surface2);
-  --jp-inverse-layout-color4: var(--ctp-mocha-surface2);
+  --jp-inverse-layout-color0: var(--ctp-mocha-overlay0);
+  --jp-inverse-layout-color1: var(--ctp-mocha-overlay0);
+  --jp-inverse-layout-color2: var(--ctp-mocha-overlay1);
+  --jp-inverse-layout-color3: var(--ctp-mocha-overlay1);
+  --jp-inverse-layout-color4: var(--ctp-mocha-overlay1);
 
   /* Brand/accent */
  
-  --jp-brand-color0: var(--ctp-mocha-mauve);
+  --jp-brand-color0: var(--ctp-mocha-green); /* TODO: find color in interface */
   --jp-brand-color1: var(--ctp-mocha-mauve);
-  --jp-brand-color2: var(--ctp-mocha-mauve);
-  --jp-brand-color3: var(--ctp-mocha-mauve);
-  --jp-accent-color0: rgba(166, 227, 161, 1);
-  --jp-accent-color1: rgba(166, 227, 161, 0.80);
-  --jp-accent-color2: rgba(166, 227, 161, 0.60);
-  --jp-accent-color3: rgba(166, 227, 161, 0.40);
+  --jp-brand-color2: var(--ctp-mocha-green); /* TODO: find color in interface */
+  --jp-brand-color3: var(--ctp-mocha-green); /* TODO: find color in interface */
+  --jp-accent-color0: var(--ctp-mocha-saphire); /* TODO: find color in interface */
+  --jp-accent-color1: var(--ctp-mocha-saphire); /* TODO: find color in interface */
+  --jp-accent-color2: var(--ctp-mocha-saphire); /* TODO: find color in interface */
+  --jp-accent-color3: var(--ctp-mocha-saphire); /* TODO: find color in interface */
 
   /* State colors (warn, error, success, info) */
 
