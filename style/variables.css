@@ -360,23 +360,23 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-number-color: var(--ctp-mocha-peach);
   --jp-mirror-editor-def-color: var(--ctp-mocha-blue);
   --jp-mirror-editor-variable-color: var(--ctp-mocha-text);
-  --jp-mirror-editor-variable-2-color: var(--ctp-mocha-text);
-  --jp-mirror-editor-variable-3-color: var(--ctp-mocha-yellow);
-  --jp-mirror-editor-punctuation-color: var(--ctp-mocha-overlay2); /* ? */
-  --jp-mirror-editor-property-color: var(--ctp-mocha-text);
+  --jp-mirror-editor-variable-2-color: var(--ctp-mocha-subtext1);
+  --jp-mirror-editor-variable-3-color: var(--ctp-mocha-subtext0);
+  --jp-mirror-editor-punctuation-color: var(--ctp-mocha-overlay2);
+  --jp-mirror-editor-property-color: var(--ctp-mocha-sapphire);
   --jp-mirror-editor-operator-color: var(--ctp-mocha-sky);
-  --jp-mirror-editor-comment-color: var(--ctp-mocha-subtext1);
+  --jp-mirror-editor-comment-color: var(--ctp-mocha-overlay0);
   --jp-mirror-editor-string-color: var(--ctp-mocha-green);
   --jp-mirror-editor-string-2-color: var(--ctp-mocha-blue);
-  --jp-mirror-editor-meta-color: var(--ctp-mocha-blue);
+  --jp-mirror-editor-meta-color: var(--ctp-mocha-yellow);
   --jp-mirror-editor-qualifier-color: var(--ctp-mocha-blue);
   --jp-mirror-editor-builtin-color: var(--ctp-mocha-peach);
-  --jp-mirror-editor-bracket-color: var(--ctp-mocha-subtext1);
+  --jp-mirror-editor-bracket-color: var(--ctp-mocha-red);
   --jp-mirror-editor-tag-color: var(--ctp-mocha-peach);
   --jp-mirror-editor-attribute-color: var(--ctp-mocha-blue);
-  --jp-mirror-editor-header-color: var(--ctp-mocha-blue); /* ? */
-  --jp-mirror-editor-quote-color: var(--ctp-mocha-pink); /* ? */
-  --jp-mirror-editor-link-color: var(--ctp-mocha-blue);  /* ? */
+  --jp-mirror-editor-header-color: var(--ctp-mocha-teal);
+  --jp-mirror-editor-quote-color: var(--ctp-mocha-pink);
+  --jp-mirror-editor-link-color: var(--ctp-mocha-blue);
   --jp-mirror-editor-error-color: var(--ctp-mocha-red);
   --jp-mirror-editor-hr-color: var(--ctp-mocha-yellow);
 
