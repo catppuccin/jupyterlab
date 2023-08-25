@@ -253,7 +253,8 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* State colors (warn, error, success, info) */
 
-  /* FIXME: applying luminosity on top of color stored in variable is not working */
+  /* FIXME: applying luminosity on top of color stored in variable
+  is not working, it produces no color at all */
   --jp-warn-color0: hsl(from var(--ctp-mocha-peach) h s calc(l - 20%));
   --jp-warn-color1: hsl(from var(--ctp-mocha-peach) h s calc(l - 10%));
   --jp-warn-color2: var(--ctp-mocha-peach);
@@ -283,7 +284,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-editor-active-background: var(--ctp-mocha-base);
   --jp-cell-editor-active-border-color: var(--ctp-mocha-mantle);
   --jp-cell-prompt-width: 64px;
-  --jp-cell-prompt-font-family: 'Source Code Pro', monospace;
+  --jp-cell-prompt-font-family: var(--jp-code-font-family-default);
   --jp-cell-prompt-letter-spacing: 0;
   --jp-cell-prompt-opacity: 1;
   --jp-cell-prompt-not-active-opacity: 0.5;
@@ -385,6 +386,8 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* User colors */
 
+  /* FIXME: applying opacity on top of color stored in variable
+  is not working, it produces no color at all */
   --jp-collaborator-color1: rgba(var(--ctp-mocha-red), 0.6);
   --jp-collaborator-color2: rgba(var(--ctp-mocha-yellow), 0.6);
   --jp-collaborator-color3: rgba(var(--ctp-mocha-green), 0.6);
@@ -392,6 +395,14 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-collaborator-color5: rgba(var(--ctp-mocha-blue), 0.6);
   --jp-collaborator-color6: rgba(var(--ctp-mocha-mauve), 0.6);
   --jp-collaborator-color7: rgba(var(--ctp-mocha-pink), 0.6);
+
+  /* Vega extension styles */
+
+  --jp-vega-background: var(--ctp-mocha-text);
+
+  /* Sidebar-related styles */
+
+  --jp-sidebar-min-width: 180px;
 
   /* File or activity icons and switch semantic variables */
 
@@ -407,12 +418,4 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-switch-color: var(--ctp-mocha-subtext1);
   --jp-switch-true-position-color: var(--ctp-mocha-peach);
   --jp-switch-cursor-color: rgba(0, 0, 0, 0.8);
-
-  /* Vega extension styles */
-
-  --jp-vega-background: var(--ctp-mocha-text);
-
-  /* Sidebar-related styles */
-
-  --jp-sidebar-min-width: 180px;
 }
