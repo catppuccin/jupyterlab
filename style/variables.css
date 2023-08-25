@@ -25,7 +25,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 */
 
 :root {
-
   --ctp-mocha-rosewater: #f5e0dc;
   --ctp-mocha-flamingo: #f2cdcd;
   --ctp-mocha-pink: #f5c2e7;
@@ -239,18 +238,22 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-inverse-layout-color4: var(--ctp-mocha-overlay1);
 
   /* Brand/accent */
- 
-  --jp-brand-color0: var(--ctp-mocha-green); /* TODO: find color in interface */
+
+  /* NOTE: I was not able to see in interface color 0, 2 and 3, so we set only 1 */
+  --jp-brand-color0: var(--ctp-mocha-green);
   --jp-brand-color1: var(--ctp-mocha-mauve);
-  --jp-brand-color2: var(--ctp-mocha-green); /* TODO: find color in interface */
-  --jp-brand-color3: var(--ctp-mocha-green); /* TODO: find color in interface */
-  --jp-accent-color0: var(--ctp-mocha-saphire); /* TODO: find color in interface */
-  --jp-accent-color1: var(--ctp-mocha-saphire); /* TODO: find color in interface */
-  --jp-accent-color2: var(--ctp-mocha-saphire); /* TODO: find color in interface */
-  --jp-accent-color3: var(--ctp-mocha-saphire); /* TODO: find color in interface */
+  --jp-brand-color2: var(--ctp-mocha-green);
+  --jp-brand-color3: var(--ctp-mocha-green);
+
+  /* NOTE: I was not able to see any of these colors appearing in the interface */
+  --jp-accent-color0: var(--ctp-mocha-saphire);
+  --jp-accent-color1: var(--ctp-mocha-saphire);
+  --jp-accent-color2: var(--ctp-mocha-saphire);
+  --jp-accent-color3: var(--ctp-mocha-saphire);
 
   /* State colors (warn, error, success, info) */
 
+  /* FIXME: applying luminosity on top of color stored in variable is not working */
   --jp-warn-color0: hsl(from var(--ctp-mocha-peach) h s calc(l - 20%));
   --jp-warn-color1: hsl(from var(--ctp-mocha-peach) h s calc(l - 10%));
   --jp-warn-color2: var(--ctp-mocha-peach);
@@ -382,13 +385,13 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* User colors */
 
-  --jp-collaborator-color1: rgba(var(--ctp-mocha-red), 0.60);
-  --jp-collaborator-color2: rgba(var(--ctp-mocha-yellow), 0.60);
-  --jp-collaborator-color3: rgba(var(--ctp-mocha-green), 0.60);
-  --jp-collaborator-color4: rgba(var(--ctp-mocha-teal), 0.60);
-  --jp-collaborator-color5: rgba(var(--ctp-mocha-blue), 0.60);
-  --jp-collaborator-color6: rgba(var(--ctp-mocha-mauve), 0.60);
-  --jp-collaborator-color7: rgba(var(--ctp-mocha-pink), 0.60);
+  --jp-collaborator-color1: rgba(var(--ctp-mocha-red), 0.6);
+  --jp-collaborator-color2: rgba(var(--ctp-mocha-yellow), 0.6);
+  --jp-collaborator-color3: rgba(var(--ctp-mocha-green), 0.6);
+  --jp-collaborator-color4: rgba(var(--ctp-mocha-teal), 0.6);
+  --jp-collaborator-color5: rgba(var(--ctp-mocha-blue), 0.6);
+  --jp-collaborator-color6: rgba(var(--ctp-mocha-mauve), 0.6);
+  --jp-collaborator-color7: rgba(var(--ctp-mocha-pink), 0.6);
 
   /* File or activity icons and switch semantic variables */
 
