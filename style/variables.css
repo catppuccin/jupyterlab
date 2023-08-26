@@ -409,12 +409,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-search-toggle-off-opacity: 0.6;
   --jp-search-toggle-hover-opacity: 0.8;
   --jp-search-toggle-on-opacity: 1;
-  --jp-search-selected-match-background-color: rgb(255, 225, 0);
-  --jp-search-selected-match-color: black;
-  --jp-search-unselected-match-background-color: var(
-    --jp-inverse-layout-color0
-  );
-  --jp-search-unselected-match-color: var(--jp-ui-inverse-font-color0);
+  --jp-search-selected-match-background-color: var(--ctp-mocha-pink);
+  --jp-search-selected-match-color: var(--ctp-mocha-base);
+  --jp-search-unselected-match-background-color: var(--ctp-mocha-rosewater);
+  --jp-search-unselected-match-color: var(--ctp-mocha-surface0);
 
   /* scrollbar related styles. Supports every browser except Edge. */
 
