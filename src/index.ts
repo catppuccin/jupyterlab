@@ -18,12 +18,16 @@ const plugin: JupyterFrontEndPlugin<void> = {
   autoStart: true,
   requires: [IThemeManager],
   optional: [ISettingRegistry],
-  activate: (app: JupyterFrontEnd, manager: IThemeManager, settingRegistry: ISettingRegistry | null) => {
+  activate: (
+    app: JupyterFrontEnd,
+    manager: IThemeManager,
+    settingRegistry: ISettingRegistry | null
+  ) => {
     const style = 'catppuccin_jupyterlab/index.css';
     const palettes = new CatppuccinPalettes();
 
-    let brandColor = "mauve"
-    let accentColor = "green"
+    let brandColor = 'mauve';
+    let accentColor = 'green';
 
     function loadSettings(settingRegistry: ISettingRegistry | null) {
       if (settingRegistry) {
@@ -32,10 +36,15 @@ const plugin: JupyterFrontEndPlugin<void> = {
           .then(settings => {
             brandColor = settings.get('brandColor').composite as string;
             accentColor = settings.get('accentColor').composite as string;
-            console.debug(`catppuccin_jupyterlab settings loaded. Brand color is '${brandColor}', Accent color is '${accentColor}'`);
+            console.debug(
+              `catppuccin_jupyterlab settings loaded. Brand color is '${brandColor}', Accent color is '${accentColor}'`
+            );
           })
           .catch(reason => {
-            console.error('Failed to load settings for catppuccin_jupyterlab.', reason);
+            console.error(
+              'Failed to load settings for catppuccin_jupyterlab.',
+              reason
+            );
           });
       }
     }
@@ -48,7 +57,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
       load: () => {
         palettes.setColorsLatte();
         palettes.setConfigColors(brandColor, accentColor);
-        return manager.loadCSS(style)
+        return manager.loadCSS(style);
       },
       unload: () => Promise.resolve(undefined)
     });
@@ -59,7 +68,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
       load: () => {
         palettes.setColorsFrappe();
         palettes.setConfigColors(brandColor, accentColor);
-        return manager.loadCSS(style)
+        return manager.loadCSS(style);
       },
       unload: () => Promise.resolve(undefined)
     });
@@ -70,7 +79,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
       load: () => {
         palettes.setColorsMacchiato();
         palettes.setConfigColors(brandColor, accentColor);
-        return manager.loadCSS(style)
+        return manager.loadCSS(style);
       },
       unload: () => Promise.resolve(undefined)
     });
@@ -81,7 +90,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
       load: () => {
         palettes.setColorsMocha();
         palettes.setConfigColors(brandColor, accentColor);
-        return manager.loadCSS(style)
+        return manager.loadCSS(style);
       },
       unload: () => Promise.resolve(undefined)
     });

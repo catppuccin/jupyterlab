@@ -25,7 +25,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 */
 
 :root {
-
   /* Elevation
    *
    * We style box-shadows using Material Design's idea of elevation. These particular numbers are taken from here:
@@ -213,34 +212,34 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Brand/accent */
 
-  --jp-brand-color0: color-mix(in srgb,var(--ctp-cfg-brand-color),#000 10%);
+  --jp-brand-color0: color-mix(in srgb, var(--ctp-cfg-brand-color), #000 10%);
   --jp-brand-color1: var(--ctp-cfg-brand-color);
-  --jp-brand-color2: color-mix(in srgb,var(--ctp-cfg-brand-color),#fff 10%);
-  --jp-brand-color3: color-mix(in srgb,var(--ctp-cfg-brand-color),#fff 20%);
+  --jp-brand-color2: color-mix(in srgb, var(--ctp-cfg-brand-color), #fff 10%);
+  --jp-brand-color3: color-mix(in srgb, var(--ctp-cfg-brand-color), #fff 20%);
 
-  --jp-accent-color0: color-mix(in srgb,var(--ctp-cfg-accent-color),#000 10%);
+  --jp-accent-color0: color-mix(in srgb, var(--ctp-cfg-accent-color), #000 10%);
   --jp-accent-color1: var(--ctp-cfg-accent-color);
-  --jp-accent-color2: color-mix(in srgb,var(--ctp-cfg-accent-color),#fff 10%);
-  --jp-accent-color3: color-mix(in srgb,var(--ctp-cfg-accent-color),#fff 20%);
+  --jp-accent-color2: color-mix(in srgb, var(--ctp-cfg-accent-color), #fff 10%);
+  --jp-accent-color3: color-mix(in srgb, var(--ctp-cfg-accent-color), #fff 20%);
 
   /* State colors (warn, error, success, info) */
 
-  --jp-warn-color0: color-mix(in srgb,var(--ctp-plt-peach),#000 30%);
-  --jp-warn-color1: color-mix(in srgb,var(--ctp-plt-peach),#000 15%);
+  --jp-warn-color0: color-mix(in srgb, var(--ctp-plt-peach), #000 30%);
+  --jp-warn-color1: color-mix(in srgb, var(--ctp-plt-peach), #000 15%);
   --jp-warn-color2: var(--ctp-plt-peach);
-  --jp-warn-color3: color-mix(in srgb,var(--ctp-plt-peach),#fff 15%);
-  --jp-error-color0: color-mix(in srgb,var(--ctp-plt-red),#000 30%);
-  --jp-error-color1: color-mix(in srgb,var(--ctp-plt-red),#000 15%);
+  --jp-warn-color3: color-mix(in srgb, var(--ctp-plt-peach), #fff 15%);
+  --jp-error-color0: color-mix(in srgb, var(--ctp-plt-red), #000 30%);
+  --jp-error-color1: color-mix(in srgb, var(--ctp-plt-red), #000 15%);
   --jp-error-color2: var(--ctp-plt-red);
-  --jp-error-color3: color-mix(in srgb,var(--ctp-plt-red),#fff 15%);
-  --jp-success-color0: color-mix(in srgb,var(--ctp-plt-green),#000 30%);
-  --jp-success-color1: color-mix(in srgb,var(--ctp-plt-green),#000 15%);
+  --jp-error-color3: color-mix(in srgb, var(--ctp-plt-red), #fff 15%);
+  --jp-success-color0: color-mix(in srgb, var(--ctp-plt-green), #000 30%);
+  --jp-success-color1: color-mix(in srgb, var(--ctp-plt-green), #000 15%);
   --jp-success-color2: var(--ctp-plt-green);
-  --jp-success-color3: color-mix(in srgb,var(--ctp-plt-green),#fff 15%);
-  --jp-info-color0: color-mix(in srgb,var(--ctp-plt-teal),#000 30%);
-  --jp-info-color1: color-mix(in srgb,var(--ctp-plt-teal),#000 15%);
+  --jp-success-color3: color-mix(in srgb, var(--ctp-plt-green), #fff 15%);
+  --jp-info-color0: color-mix(in srgb, var(--ctp-plt-teal), #000 30%);
+  --jp-info-color1: color-mix(in srgb, var(--ctp-plt-teal), #000 15%);
   --jp-info-color2: var(--ctp-plt-teal);
-  --jp-info-color3: color-mix(in srgb,var(--ctp-plt-teal),#fff 15%);
+  --jp-info-color3: color-mix(in srgb, var(--ctp-plt-teal), #fff 15%);
 
   /* Cell specific styles */
 
@@ -356,13 +355,13 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* User colors */
 
-  --jp-collaborator-color1: color-mix(in srgb,var(--ctp-plt-red),#000 25%);
-  --jp-collaborator-color2: color-mix(in srgb,var(--ctp-plt-yellow),#000 25%);
-  --jp-collaborator-color3: color-mix(in srgb,var(--ctp-plt-green),#000 25%);
-  --jp-collaborator-color4: color-mix(in srgb,var(--ctp-plt-teal),#000 25%);
-  --jp-collaborator-color5: color-mix(in srgb,var(--ctp-plt-blue),#000 25%);
-  --jp-collaborator-color6: color-mix(in srgb,var(--ctp-plt-mauve),#000 25%);
-  --jp-collaborator-color7: color-mix(in srgb,var(--ctp-plt-pink),#000 25%);
+  --jp-collaborator-color1: color-mix(in srgb, var(--ctp-plt-red), #000 25%);
+  --jp-collaborator-color2: color-mix(in srgb, var(--ctp-plt-yellow), #000 25%);
+  --jp-collaborator-color3: color-mix(in srgb, var(--ctp-plt-green), #000 25%);
+  --jp-collaborator-color4: color-mix(in srgb, var(--ctp-plt-teal), #000 25%);
+  --jp-collaborator-color5: color-mix(in srgb, var(--ctp-plt-blue), #000 25%);
+  --jp-collaborator-color6: color-mix(in srgb, var(--ctp-plt-mauve), #000 25%);
+  --jp-collaborator-color7: color-mix(in srgb, var(--ctp-plt-pink), #000 25%);
 
   /* Vega extension styles */
 
@@ -403,14 +402,22 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Button colors */
   --jp-accept-color-normal: var(--ctp-plt-blue);
-  --jp-accept-color-hover: color-mix(in srgb,var(--ctp-plt-blue),#000 15%);
-  --jp-accept-color-active: color-mix(in srgb,var(--ctp-plt-blue),#000 30%);
+  --jp-accept-color-hover: color-mix(in srgb, var(--ctp-plt-blue), #000 15%);
+  --jp-accept-color-active: color-mix(in srgb, var(--ctp-plt-blue), #000 30%);
   --jp-warn-color-normal: var(--ctp-plt-red);
-  --jp-warn-color-hover: color-mix(in srgb,var(--ctp-plt-red),#000 15%);
-  --jp-warn-color-active: color-mix(in srgb,var(--ctp-plt-red),#000 30%);
+  --jp-warn-color-hover: color-mix(in srgb, var(--ctp-plt-red), #000 15%);
+  --jp-warn-color-active: color-mix(in srgb, var(--ctp-plt-red), #000 30%);
   --jp-reject-color-normal: var(--ctp-plt-overlay2);
-  --jp-reject-color-hover: color-mix(in srgb,var(--ctp-plt-overlay2),#000 15%);
-  --jp-reject-color-active: color-mix(in srgb,var(--ctp-plt-overlay2),#000 30%);
+  --jp-reject-color-hover: color-mix(
+    in srgb,
+    var(--ctp-plt-overlay2),
+    #000 15%
+  );
+  --jp-reject-color-active: color-mix(
+    in srgb,
+    var(--ctp-plt-overlay2),
+    #000 30%
+  );
 
   /* File or activity icons and switch semantic variables */
 
