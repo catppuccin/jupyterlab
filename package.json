@@ -18,7 +18,8 @@
     },
     "files": [
         "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
-        "style/**/*.{css,js,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+        "style/**/*.{css,js,eot,gif,html,jpg,json,png,svg,woff2,ttf}",
+        "schema/*.json"
     ],
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
@@ -54,7 +55,8 @@
     },
     "dependencies": {
         "@jupyterlab/application": "^4.0.0",
-        "@jupyterlab/apputils": "^4.0.0"
+        "@jupyterlab/apputils": "^4.0.0",
+        "@jupyterlab/settingregistry": "^4.0.0"
     },
     "devDependencies": {
         "@jupyterlab/builder": "^4.0.0",
@@ -89,6 +91,7 @@
     "jupyterlab": {
         "extension": true,
         "outputDir": "catppuccin_jupyterlab/labextension",
+        "schemaDir": "schema",
         "themePath": "style/index.css"
     },
     "eslintIgnore": [

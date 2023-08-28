@@ -1,4 +1,16 @@
 export class CatppuccinPalettes {
+
+    setConfigColors(brandColor: string, accentColor: string) {
+        document.documentElement.style.setProperty(
+            '--ctp-cfg-brand-color',
+            `var(--ctp-plt-${brandColor})`
+        );
+        document.documentElement.style.setProperty(
+            '--ctp-cfg-accent-color',
+            `var(--ctp-plt-${accentColor})`
+        );
+    }
+
     setColorsLatte() {
         document.documentElement.style.setProperty('--ctp-plt-rosewater', '#dc8a78');
         document.documentElement.style.setProperty('--ctp-plt-flamingo', '#dd7878');
@@ -27,6 +39,7 @@ export class CatppuccinPalettes {
         document.documentElement.style.setProperty('--ctp-plt-mantle', '#e6e9ef');
         document.documentElement.style.setProperty('--ctp-plt-crust', '#dce0e8');
     }
+
     setColorsFrappe() {
         document.documentElement.style.setProperty('--ctp-plt-rosewater', '#f2d5cf');
         document.documentElement.style.setProperty('--ctp-plt-flamingo', '#eebebe');
@@ -54,8 +67,8 @@ export class CatppuccinPalettes {
         document.documentElement.style.setProperty('--ctp-plt-base', '#303446');
         document.documentElement.style.setProperty('--ctp-plt-mantle', '#292c3c');
         document.documentElement.style.setProperty('--ctp-plt-crust', '#232634');
-    
     }
+
     setColorsMacchiato() {
         document.documentElement.style.setProperty('--ctp-plt-rosewater', '#f4dbd6');
         document.documentElement.style.setProperty('--ctp-plt-flamingo', '#f0c6c6');
@@ -84,6 +97,7 @@ export class CatppuccinPalettes {
         document.documentElement.style.setProperty('--ctp-plt-mantle', '#1e2030');
         document.documentElement.style.setProperty('--ctp-plt-crust', '#181926');
     }
+
     setColorsMocha() {
         document.documentElement.style.setProperty('--ctp-plt-rosewater', '#f5e0dc');
         document.documentElement.style.setProperty('--ctp-plt-flamingo', '#f2cdcd');

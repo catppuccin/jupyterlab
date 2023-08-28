@@ -1,0 +1,53 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "Theme - Catppuccin",
+  "description": "Catppuccin Theme settings.",
+  "type": "object",
+  "properties": {
+    "brandColor": {
+      "title": "Brand Color",
+      "type": "string",
+      "enum": [
+          "rosewater",
+          "flamingo",
+          "pink",
+          "mauve",
+          "red",
+          "maroon",
+          "peach",
+          "yellow",
+          "green",
+          "teal",
+          "sky",
+          "sapphire",
+          "blue",
+          "lavender"
+      ],
+      "default": "mauve",
+      "description": "Controls which brand color to use. Refresh the page to apply the new color."
+    },
+    "accentColor": {
+      "title": "Accent Color",
+      "type": "string",
+      "enum": [
+          "rosewater",
+          "flamingo",
+          "pink",
+          "mauve",
+          "red",
+          "maroon",
+          "peach",
+          "yellow",
+          "green",
+          "teal",
+          "sky",
+          "sapphire",
+          "blue",
+          "lavender"
+      ],
+      "default": "green",
+      "description": "Controls which accent color to use. Refresh the page to apply the new color."
+    }
+  },
+  "additionalProperties": false
+}  
