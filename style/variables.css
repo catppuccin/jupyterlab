@@ -253,24 +253,22 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* State colors (warn, error, success, info) */
 
-  /* FIXME: applying luminosity on top of color stored in variable
-  is not working, it produces no color at all */
-  --jp-warn-color0: hsl(from var(--ctp-mocha-peach) h s calc(l - 20%));
-  --jp-warn-color1: hsl(from var(--ctp-mocha-peach) h s calc(l - 10%));
+  --jp-warn-color0: color-mix(in srgb,var(--ctp-mocha-peach),#000 30%);
+  --jp-warn-color1: color-mix(in srgb,var(--ctp-mocha-peach),#000 15%);
   --jp-warn-color2: var(--ctp-mocha-peach);
-  --jp-warn-color3: hsl(from var(--ctp-mocha-peach) h s calc(l + 10%));
-  --jp-error-color0: hsl(from var(--ctp-mocha-red) h s calc(l - 20%));
-  --jp-error-color1: hsl(from var(--ctp-mocha-red) h s calc(l - 10%));
+  --jp-warn-color3: color-mix(in srgb,var(--ctp-mocha-peach),#fff 15%);
+  --jp-error-color0: color-mix(in srgb,var(--ctp-mocha-red),#000 30%);
+  --jp-error-color1: color-mix(in srgb,var(--ctp-mocha-red),#000 15%);
   --jp-error-color2: var(--ctp-mocha-red);
-  --jp-error-color3: hsl(from var(--ctp-mocha-red) h s calc(l + 10%));
-  --jp-success-color0: hsl(from var(--ctp-mocha-green) h s calc(l - 20%));
-  --jp-success-color1: hsl(from var(--ctp-mocha-green) h s calc(l - 10%));
+  --jp-error-color3: color-mix(in srgb,var(--ctp-mocha-red),#fff 15%);
+  --jp-success-color0: color-mix(in srgb,var(--ctp-mocha-green),#000 30%);
+  --jp-success-color1: color-mix(in srgb,var(--ctp-mocha-green),#000 15%);
   --jp-success-color2: var(--ctp-mocha-green);
-  --jp-success-color3: hsl(from var(--ctp-mocha-green) h s calc(l + 10%));
-  --jp-info-color0: hsl(from var(--ctp-mocha-teal) h s calc(l - 20%));
-  --jp-info-color1: hsl(from var(--ctp-mocha-teal) h s calc(l - 10%));
+  --jp-success-color3: color-mix(in srgb,var(--ctp-mocha-green),#fff 15%);
+  --jp-info-color0: color-mix(in srgb,var(--ctp-mocha-teal),#000 30%);
+  --jp-info-color1: color-mix(in srgb,var(--ctp-mocha-teal),#000 15%);
   --jp-info-color2: var(--ctp-mocha-teal);
-  --jp-info-color3: hsl(from var(--ctp-mocha-teal) h s calc(l + 10%));
+  --jp-info-color3: color-mix(in srgb,var(--ctp-mocha-teal),#fff 15%);
 
   /* Cell specific styles */
 
