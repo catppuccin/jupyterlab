@@ -25,32 +25,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 */
 
 :root {
-  --ctp-mocha-rosewater: #f5e0dc;
-  --ctp-mocha-flamingo: #f2cdcd;
-  --ctp-mocha-pink: #f5c2e7;
-  --ctp-mocha-mauve: #cba6f7;
-  --ctp-mocha-red: #f38ba8;
-  --ctp-mocha-maroon: #eba0ac;
-  --ctp-mocha-peach: #fab387;
-  --ctp-mocha-yellow: #f9e2af;
-  --ctp-mocha-green: #a6e3a1;
-  --ctp-mocha-teal: #94e2d5;
-  --ctp-mocha-sky: #89dceb;
-  --ctp-mocha-sapphire: #74c7ec;
-  --ctp-mocha-blue: #89b4fa;
-  --ctp-mocha-lavender: #b4befe;
-  --ctp-mocha-text: #cdd6f4;
-  --ctp-mocha-subtext1: #bac2de;
-  --ctp-mocha-subtext0: #a6adc8;
-  --ctp-mocha-overlay2: #9399b2;
-  --ctp-mocha-overlay1: #7f849c;
-  --ctp-mocha-overlay0: #6c7086;
-  --ctp-mocha-surface2: #585b70;
-  --ctp-mocha-surface1: #45475a;
-  --ctp-mocha-surface0: #313244;
-  --ctp-mocha-base: #1e1e2e;
-  --ctp-mocha-mantle: #181825;
-  --ctp-mocha-crust: #11111b;
 
   /* Elevation
    *
@@ -114,10 +88,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--ctp-mocha-crust);
-  --jp-border-color1: var(--ctp-mocha-crust);
-  --jp-border-color2: var(--ctp-mocha-crust);
-  --jp-border-color3: var(--ctp-mocha-crust);
+  --jp-border-color0: var(--ctp-plt-crust);
+  --jp-border-color1: var(--ctp-plt-crust);
+  --jp-border-color2: var(--ctp-plt-crust);
+  --jp-border-color3: var(--ctp-plt-crust);
   --jp-border-radius: 2px;
 
   /* UI Fonts
@@ -144,20 +118,20 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: var(--ctp-mocha-text);
-  --jp-ui-font-color1: var(--ctp-mocha-text);
-  --jp-ui-font-color2: var(--ctp-mocha-subtext1);
-  --jp-ui-font-color3: var(--ctp-mocha-subtext0);
+  --jp-ui-font-color0: var(--ctp-plt-text);
+  --jp-ui-font-color1: var(--ctp-plt-text);
+  --jp-ui-font-color2: var(--ctp-plt-subtext1);
+  --jp-ui-font-color3: var(--ctp-plt-subtext0);
 
   /*
    * Use these against the brand/accent/warn/error colors.
    * These will typically go from light to darker, in both a dark and light theme.
    */
 
-  --jp-ui-inverse-font-color0: var(--ctp-mocha-crust);
-  --jp-ui-inverse-font-color1: var(--ctp-mocha-crust);
-  --jp-ui-inverse-font-color2: var(--ctp-mocha-mantle);
-  --jp-ui-inverse-font-color3: var(--ctp-mocha-mantle);
+  --jp-ui-inverse-font-color0: var(--ctp-plt-crust);
+  --jp-ui-inverse-font-color1: var(--ctp-plt-crust);
+  --jp-ui-inverse-font-color2: var(--ctp-plt-mantle);
+  --jp-ui-inverse-font-color3: var(--ctp-plt-mantle);
 
   /* Content Fonts
    *
@@ -185,11 +159,11 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: var(--ctp-mocha-text);
-  --jp-content-font-color1: var(--ctp-mocha-text);
-  --jp-content-font-color2: var(--ctp-mocha-subtext1);
-  --jp-content-font-color3: var(--ctp-mocha-subtext0);
-  --jp-content-link-color: var(--ctp-mocha-blue);
+  --jp-content-font-color0: var(--ctp-plt-text);
+  --jp-content-font-color1: var(--ctp-plt-text);
+  --jp-content-font-color2: var(--ctp-plt-subtext1);
+  --jp-content-font-color3: var(--ctp-plt-subtext0);
+  --jp-content-link-color: var(--ctp-plt-blue);
   --jp-content-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI',
     helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
@@ -219,11 +193,11 @@ all of MD as it is not optimized for dense, information rich UIs.
    * The following are the main layout colors use in JupyterLab. In a light
    * theme these would go from light to dark.
    */
-  --jp-layout-color0: var(--ctp-mocha-base);
-  --jp-layout-color1: var(--ctp-mocha-mantle);
-  --jp-layout-color2: var(--ctp-mocha-crust);
-  --jp-layout-color3: var(--ctp-mocha-crust);
-  --jp-layout-color4: var(--ctp-mocha-crust);
+  --jp-layout-color0: var(--ctp-plt-base);
+  --jp-layout-color1: var(--ctp-plt-mantle);
+  --jp-layout-color2: var(--ctp-plt-crust);
+  --jp-layout-color3: var(--ctp-plt-crust);
+  --jp-layout-color4: var(--ctp-plt-crust);
 
   /* Inverse Layout
    *
@@ -231,44 +205,44 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from dark to light.
    */
 
-  --jp-inverse-layout-color0: var(--ctp-mocha-overlay0);
-  --jp-inverse-layout-color1: var(--ctp-mocha-overlay0);
-  --jp-inverse-layout-color2: var(--ctp-mocha-overlay1);
-  --jp-inverse-layout-color3: var(--ctp-mocha-overlay1);
-  --jp-inverse-layout-color4: var(--ctp-mocha-overlay1);
+  --jp-inverse-layout-color0: var(--ctp-plt-overlay0);
+  --jp-inverse-layout-color1: var(--ctp-plt-overlay0);
+  --jp-inverse-layout-color2: var(--ctp-plt-overlay1);
+  --jp-inverse-layout-color3: var(--ctp-plt-overlay1);
+  --jp-inverse-layout-color4: var(--ctp-plt-overlay1);
 
   /* Brand/accent */
 
   /* NOTE: I was not able to see in interface color 0, 2 and 3, so we set only 1 */
-  --jp-brand-color0: var(--ctp-mocha-green);
-  --jp-brand-color1: var(--ctp-mocha-mauve);
-  --jp-brand-color2: var(--ctp-mocha-green);
-  --jp-brand-color3: var(--ctp-mocha-green);
+  --jp-brand-color0: var(--ctp-plt-green);
+  --jp-brand-color1: var(--ctp-plt-mauve);
+  --jp-brand-color2: var(--ctp-plt-green);
+  --jp-brand-color3: var(--ctp-plt-green);
 
   /* NOTE: I was not able to see any of these colors appearing in the interface */
-  --jp-accent-color0: var(--ctp-mocha-saphire);
-  --jp-accent-color1: var(--ctp-mocha-saphire);
-  --jp-accent-color2: var(--ctp-mocha-saphire);
-  --jp-accent-color3: var(--ctp-mocha-saphire);
+  --jp-accent-color0: var(--ctp-plt-saphire);
+  --jp-accent-color1: var(--ctp-plt-saphire);
+  --jp-accent-color2: var(--ctp-plt-saphire);
+  --jp-accent-color3: var(--ctp-plt-saphire);
 
   /* State colors (warn, error, success, info) */
 
-  --jp-warn-color0: color-mix(in srgb,var(--ctp-mocha-peach),#000 30%);
-  --jp-warn-color1: color-mix(in srgb,var(--ctp-mocha-peach),#000 15%);
-  --jp-warn-color2: var(--ctp-mocha-peach);
-  --jp-warn-color3: color-mix(in srgb,var(--ctp-mocha-peach),#fff 15%);
-  --jp-error-color0: color-mix(in srgb,var(--ctp-mocha-red),#000 30%);
-  --jp-error-color1: color-mix(in srgb,var(--ctp-mocha-red),#000 15%);
-  --jp-error-color2: var(--ctp-mocha-red);
-  --jp-error-color3: color-mix(in srgb,var(--ctp-mocha-red),#fff 15%);
-  --jp-success-color0: color-mix(in srgb,var(--ctp-mocha-green),#000 30%);
-  --jp-success-color1: color-mix(in srgb,var(--ctp-mocha-green),#000 15%);
-  --jp-success-color2: var(--ctp-mocha-green);
-  --jp-success-color3: color-mix(in srgb,var(--ctp-mocha-green),#fff 15%);
-  --jp-info-color0: color-mix(in srgb,var(--ctp-mocha-teal),#000 30%);
-  --jp-info-color1: color-mix(in srgb,var(--ctp-mocha-teal),#000 15%);
-  --jp-info-color2: var(--ctp-mocha-teal);
-  --jp-info-color3: color-mix(in srgb,var(--ctp-mocha-teal),#fff 15%);
+  --jp-warn-color0: color-mix(in srgb,var(--ctp-plt-peach),#000 30%);
+  --jp-warn-color1: color-mix(in srgb,var(--ctp-plt-peach),#000 15%);
+  --jp-warn-color2: var(--ctp-plt-peach);
+  --jp-warn-color3: color-mix(in srgb,var(--ctp-plt-peach),#fff 15%);
+  --jp-error-color0: color-mix(in srgb,var(--ctp-plt-red),#000 30%);
+  --jp-error-color1: color-mix(in srgb,var(--ctp-plt-red),#000 15%);
+  --jp-error-color2: var(--ctp-plt-red);
+  --jp-error-color3: color-mix(in srgb,var(--ctp-plt-red),#fff 15%);
+  --jp-success-color0: color-mix(in srgb,var(--ctp-plt-green),#000 30%);
+  --jp-success-color1: color-mix(in srgb,var(--ctp-plt-green),#000 15%);
+  --jp-success-color2: var(--ctp-plt-green);
+  --jp-success-color3: color-mix(in srgb,var(--ctp-plt-green),#fff 15%);
+  --jp-info-color0: color-mix(in srgb,var(--ctp-plt-teal),#000 30%);
+  --jp-info-color1: color-mix(in srgb,var(--ctp-plt-teal),#000 15%);
+  --jp-info-color2: var(--ctp-plt-teal);
+  --jp-info-color3: color-mix(in srgb,var(--ctp-plt-teal),#fff 15%);
 
   /* Cell specific styles */
 
@@ -276,17 +250,17 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-collapser-width: 8px;
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
-  --jp-cell-editor-background: var(--ctp-mocha-mantle);
-  --jp-cell-editor-border-color: var(--ctp-mocha-overlay0);
-  --jp-cell-editor-box-shadow: inset 0 0 2px var(--ctp-mocha-blue);
-  --jp-cell-editor-active-background: var(--ctp-mocha-base);
-  --jp-cell-editor-active-border-color: var(--ctp-mocha-mantle);
+  --jp-cell-editor-background: var(--ctp-plt-mantle);
+  --jp-cell-editor-border-color: var(--ctp-plt-overlay0);
+  --jp-cell-editor-box-shadow: inset 0 0 2px var(--ctp-plt-blue);
+  --jp-cell-editor-active-background: var(--ctp-plt-base);
+  --jp-cell-editor-active-border-color: var(--ctp-plt-mantle);
   --jp-cell-prompt-width: 64px;
   --jp-cell-prompt-font-family: var(--jp-code-font-family-default);
   --jp-cell-prompt-letter-spacing: 0;
   --jp-cell-prompt-opacity: 1;
   --jp-cell-prompt-not-active-opacity: 0.5;
-  --jp-cell-prompt-not-active-font-color: var(--ctp-mocha-overlay2);
+  --jp-cell-prompt-not-active-font-color: var(--ctp-plt-overlay2);
 
   /* A custom blend of MD grey and blue 600
    * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
@@ -300,7 +274,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-notebook-padding: 10px;
   --jp-notebook-select-background: var(--jp-layout-color1);
-  --jp-notebook-multiselected-color: var(--ctp-mocha-blue);
+  --jp-notebook-multiselected-color: var(--ctp-plt-blue);
 
   /* The scroll padding is calculated to fill enough space at the bottom of the
   notebook to show one single-line cell (with appropriate padding) at the top
@@ -315,9 +289,9 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Rendermime styles */
 
-  --jp-rendermime-error-background: var(--ctp-mocha-maroon);
-  --jp-rendermime-table-row-background: var(--ctp-mocha-mantle);
-  --jp-rendermime-table-row-hover-background: var(--ctp-mocha-blue);
+  --jp-rendermime-error-background: var(--ctp-plt-maroon);
+  --jp-rendermime-table-row-background: var(--ctp-plt-mantle);
+  --jp-rendermime-table-row-hover-background: var(--ctp-plt-blue);
 
   /* Dialog specific styles */
 
@@ -334,7 +308,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-toolbar-background: var(--jp-layout-color1);
   --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.24);
   --jp-toolbar-header-margin: 4px 4px 0 4px;
-  --jp-toolbar-active-background: var(--ctp-mocha-crust);
+  --jp-toolbar-active-background: var(--ctp-plt-crust);
 
   /* Statusbar specific styles */
 
@@ -342,59 +316,59 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Input field styles */
 
-  --jp-input-box-shadow: inset 0 0 2px var(--ctp-mocha-blue);
+  --jp-input-box-shadow: inset 0 0 2px var(--ctp-plt-blue);
   --jp-input-active-background: var(--jp-layout-color1);
   --jp-input-hover-background: var(--jp-layout-color1);
-  --jp-input-background: var(--ctp-mocha-mantle);
+  --jp-input-background: var(--ctp-plt-mantle);
   --jp-input-border-color: var(--jp-border-color1);
   --jp-input-active-border-color: var(--jp-brand-color1);
 
   /* General editor styles */
 
-  --jp-editor-selected-background: var(--ctp-mocha-surface1);
-  --jp-editor-selected-focused-background: var(--ctp-mocha-surface2);
-  --jp-editor-cursor-color: var(--ctp-mocha-rosewater);
+  --jp-editor-selected-background: var(--ctp-plt-surface1);
+  --jp-editor-selected-focused-background: var(--ctp-plt-surface2);
+  --jp-editor-cursor-color: var(--ctp-plt-rosewater);
 
   /* Code mirror specific styles */
 
-  --jp-mirror-editor-keyword-color: var(--ctp-mocha-red);
-  --jp-mirror-editor-atom-color: var(--ctp-mocha-lavender);
-  --jp-mirror-editor-number-color: var(--ctp-mocha-peach);
-  --jp-mirror-editor-def-color: var(--ctp-mocha-blue);
-  --jp-mirror-editor-variable-color: var(--ctp-mocha-text);
-  --jp-mirror-editor-variable-2-color: var(--ctp-mocha-subtext1);
-  --jp-mirror-editor-variable-3-color: var(--ctp-mocha-subtext0);
-  --jp-mirror-editor-punctuation-color: var(--ctp-mocha-overlay2);
-  --jp-mirror-editor-property-color: var(--ctp-mocha-sapphire);
-  --jp-mirror-editor-operator-color: var(--ctp-mocha-sky);
-  --jp-mirror-editor-comment-color: var(--ctp-mocha-overlay0);
-  --jp-mirror-editor-string-color: var(--ctp-mocha-green);
-  --jp-mirror-editor-string-2-color: var(--ctp-mocha-blue);
-  --jp-mirror-editor-meta-color: var(--ctp-mocha-yellow);
-  --jp-mirror-editor-qualifier-color: var(--ctp-mocha-blue);
-  --jp-mirror-editor-builtin-color: var(--ctp-mocha-peach);
-  --jp-mirror-editor-bracket-color: var(--ctp-mocha-red);
-  --jp-mirror-editor-tag-color: var(--ctp-mocha-peach);
-  --jp-mirror-editor-attribute-color: var(--ctp-mocha-blue);
-  --jp-mirror-editor-header-color: var(--ctp-mocha-teal);
-  --jp-mirror-editor-quote-color: var(--ctp-mocha-pink);
-  --jp-mirror-editor-link-color: var(--ctp-mocha-blue);
-  --jp-mirror-editor-error-color: var(--ctp-mocha-red);
-  --jp-mirror-editor-hr-color: var(--ctp-mocha-yellow);
+  --jp-mirror-editor-keyword-color: var(--ctp-plt-red);
+  --jp-mirror-editor-atom-color: var(--ctp-plt-lavender);
+  --jp-mirror-editor-number-color: var(--ctp-plt-peach);
+  --jp-mirror-editor-def-color: var(--ctp-plt-blue);
+  --jp-mirror-editor-variable-color: var(--ctp-plt-text);
+  --jp-mirror-editor-variable-2-color: var(--ctp-plt-subtext1);
+  --jp-mirror-editor-variable-3-color: var(--ctp-plt-subtext0);
+  --jp-mirror-editor-punctuation-color: var(--ctp-plt-overlay2);
+  --jp-mirror-editor-property-color: var(--ctp-plt-sapphire);
+  --jp-mirror-editor-operator-color: var(--ctp-plt-sky);
+  --jp-mirror-editor-comment-color: var(--ctp-plt-overlay0);
+  --jp-mirror-editor-string-color: var(--ctp-plt-green);
+  --jp-mirror-editor-string-2-color: var(--ctp-plt-blue);
+  --jp-mirror-editor-meta-color: var(--ctp-plt-yellow);
+  --jp-mirror-editor-qualifier-color: var(--ctp-plt-blue);
+  --jp-mirror-editor-builtin-color: var(--ctp-plt-peach);
+  --jp-mirror-editor-bracket-color: var(--ctp-plt-red);
+  --jp-mirror-editor-tag-color: var(--ctp-plt-peach);
+  --jp-mirror-editor-attribute-color: var(--ctp-plt-blue);
+  --jp-mirror-editor-header-color: var(--ctp-plt-teal);
+  --jp-mirror-editor-quote-color: var(--ctp-plt-pink);
+  --jp-mirror-editor-link-color: var(--ctp-plt-blue);
+  --jp-mirror-editor-error-color: var(--ctp-plt-red);
+  --jp-mirror-editor-hr-color: var(--ctp-plt-yellow);
 
   /* User colors */
 
-  --jp-collaborator-color1: color-mix(in srgb,var(--ctp-mocha-red),#000 25%);
-  --jp-collaborator-color2: color-mix(in srgb,var(--ctp-mocha-yellow),#000 25%);
-  --jp-collaborator-color3: color-mix(in srgb,var(--ctp-mocha-green),#000 25%);
-  --jp-collaborator-color4: color-mix(in srgb,var(--ctp-mocha-teal),#000 25%);
-  --jp-collaborator-color5: color-mix(in srgb,var(--ctp-mocha-blue),#000 25%);
-  --jp-collaborator-color6: color-mix(in srgb,var(--ctp-mocha-mauve),#000 25%);
-  --jp-collaborator-color7: color-mix(in srgb,var(--ctp-mocha-pink),#000 25%);
+  --jp-collaborator-color1: color-mix(in srgb,var(--ctp-plt-red),#000 25%);
+  --jp-collaborator-color2: color-mix(in srgb,var(--ctp-plt-yellow),#000 25%);
+  --jp-collaborator-color3: color-mix(in srgb,var(--ctp-plt-green),#000 25%);
+  --jp-collaborator-color4: color-mix(in srgb,var(--ctp-plt-teal),#000 25%);
+  --jp-collaborator-color5: color-mix(in srgb,var(--ctp-plt-blue),#000 25%);
+  --jp-collaborator-color6: color-mix(in srgb,var(--ctp-plt-mauve),#000 25%);
+  --jp-collaborator-color7: color-mix(in srgb,var(--ctp-plt-pink),#000 25%);
 
   /* Vega extension styles */
 
-  --jp-vega-background: var(--ctp-mocha-text);
+  --jp-vega-background: var(--ctp-plt-text);
 
   /* Sidebar-related styles */
 
@@ -405,10 +379,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-search-toggle-off-opacity: 0.6;
   --jp-search-toggle-hover-opacity: 0.8;
   --jp-search-toggle-on-opacity: 1;
-  --jp-search-selected-match-background-color: var(--ctp-mocha-pink);
-  --jp-search-selected-match-color: var(--ctp-mocha-base);
-  --jp-search-unselected-match-background-color: var(--ctp-mocha-rosewater);
-  --jp-search-unselected-match-color: var(--ctp-mocha-surface0);
+  --jp-search-selected-match-background-color: var(--ctp-plt-pink);
+  --jp-search-selected-match-color: var(--ctp-plt-base);
+  --jp-search-unselected-match-background-color: var(--ctp-plt-rosewater);
+  --jp-search-unselected-match-color: var(--ctp-plt-surface0);
 
   /* scrollbar related styles. Supports every browser except Edge. */
 
@@ -424,34 +398,34 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
 
   /* Icon colors that work well with light or dark backgrounds */
-  --jp-icon-contrast-color0: var(--ctp-mocha-mauve);
-  --jp-icon-contrast-color1: var(--ctp-mocha-green);
-  --jp-icon-contrast-color2: var(--ctp-mocha-pink);
-  --jp-icon-contrast-color3: var(--ctp-mocha-blue);
+  --jp-icon-contrast-color0: var(--ctp-plt-mauve);
+  --jp-icon-contrast-color1: var(--ctp-plt-green);
+  --jp-icon-contrast-color2: var(--ctp-plt-pink);
+  --jp-icon-contrast-color3: var(--ctp-plt-blue);
 
   /* Button colors */
-  --jp-accept-color-normal: var(--ctp-mocha-blue);
-  --jp-accept-color-hover: color-mix(in srgb,var(--ctp-mocha-blue),#000 15%);
-  --jp-accept-color-active: color-mix(in srgb,var(--ctp-mocha-blue),#000 30%);
-  --jp-warn-color-normal: var(--ctp-mocha-red);
-  --jp-warn-color-hover: color-mix(in srgb,var(--ctp-mocha-red),#000 15%);
-  --jp-warn-color-active: color-mix(in srgb,var(--ctp-mocha-red),#000 30%);
-  --jp-reject-color-normal: var(--ctp-mocha-overlay2);
-  --jp-reject-color-hover: color-mix(in srgb,var(--ctp-mocha-overlay2),#000 15%);
-  --jp-reject-color-active: color-mix(in srgb,var(--ctp-mocha-overlay2),#000 30%);
+  --jp-accept-color-normal: var(--ctp-plt-blue);
+  --jp-accept-color-hover: color-mix(in srgb,var(--ctp-plt-blue),#000 15%);
+  --jp-accept-color-active: color-mix(in srgb,var(--ctp-plt-blue),#000 30%);
+  --jp-warn-color-normal: var(--ctp-plt-red);
+  --jp-warn-color-hover: color-mix(in srgb,var(--ctp-plt-red),#000 15%);
+  --jp-warn-color-active: color-mix(in srgb,var(--ctp-plt-red),#000 30%);
+  --jp-reject-color-normal: var(--ctp-plt-overlay2);
+  --jp-reject-color-hover: color-mix(in srgb,var(--ctp-plt-overlay2),#000 15%);
+  --jp-reject-color-active: color-mix(in srgb,var(--ctp-plt-overlay2),#000 30%);
 
   /* File or activity icons and switch semantic variables */
 
-  --jp-jupyter-icon-color: var(--ctp-mocha-peach);
-  --jp-notebook-icon-color: var(--ctp-mocha-peach);
-  --jp-json-icon-color: var(--ctp-mocha-peach);
-  --jp-console-icon-background-color: var(--ctp-mocha-blue);
-  --jp-console-icon-color: var(--ctp-mocha-text);
-  --jp-terminal-icon-background-color: var(--ctp-mocha-surface2);
-  --jp-terminal-icon-color: var(--ctp-mocha-text);
-  --jp-text-editor-icon-color: var(--ctp-mocha-subtext0);
-  --jp-inspector-icon-color: var(--ctp-mocha-subtext0);
-  --jp-switch-color: var(--ctp-mocha-subtext1);
-  --jp-switch-true-position-color: var(--ctp-mocha-peach);
+  --jp-jupyter-icon-color: var(--ctp-plt-peach);
+  --jp-notebook-icon-color: var(--ctp-plt-peach);
+  --jp-json-icon-color: var(--ctp-plt-peach);
+  --jp-console-icon-background-color: var(--ctp-plt-blue);
+  --jp-console-icon-color: var(--ctp-plt-text);
+  --jp-terminal-icon-background-color: var(--ctp-plt-surface2);
+  --jp-terminal-icon-color: var(--ctp-plt-text);
+  --jp-text-editor-icon-color: var(--ctp-plt-subtext0);
+  --jp-inspector-icon-color: var(--ctp-plt-subtext0);
+  --jp-switch-color: var(--ctp-plt-subtext1);
+  --jp-switch-true-position-color: var(--ctp-plt-peach);
   --jp-switch-cursor-color: rgba(0, 0, 0, 0.8);
 }
