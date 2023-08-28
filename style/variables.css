@@ -384,15 +384,13 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* User colors */
 
-  /* FIXME: applying opacity on top of color stored in variable
-  is not working, it produces no color at all */
-  --jp-collaborator-color1: rgba(var(--ctp-mocha-red), 0.6);
-  --jp-collaborator-color2: rgba(var(--ctp-mocha-yellow), 0.6);
-  --jp-collaborator-color3: rgba(var(--ctp-mocha-green), 0.6);
-  --jp-collaborator-color4: rgba(var(--ctp-mocha-teal), 0.6);
-  --jp-collaborator-color5: rgba(var(--ctp-mocha-blue), 0.6);
-  --jp-collaborator-color6: rgba(var(--ctp-mocha-mauve), 0.6);
-  --jp-collaborator-color7: rgba(var(--ctp-mocha-pink), 0.6);
+  --jp-collaborator-color1: color-mix(in srgb,var(--ctp-mocha-red),#000 25%);
+  --jp-collaborator-color2: color-mix(in srgb,var(--ctp-mocha-yellow),#000 25%);
+  --jp-collaborator-color3: color-mix(in srgb,var(--ctp-mocha-green),#000 25%);
+  --jp-collaborator-color4: color-mix(in srgb,var(--ctp-mocha-teal),#000 25%);
+  --jp-collaborator-color5: color-mix(in srgb,var(--ctp-mocha-blue),#000 25%);
+  --jp-collaborator-color6: color-mix(in srgb,var(--ctp-mocha-mauve),#000 25%);
+  --jp-collaborator-color7: color-mix(in srgb,var(--ctp-mocha-pink),#000 25%);
 
   /* Vega extension styles */
 
