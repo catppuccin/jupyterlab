@@ -216,7 +216,6 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-brand-color1: var(--ctp-cfg-brand-color);
   --jp-brand-color2: color-mix(in srgb, var(--ctp-cfg-brand-color), #fff 10%);
   --jp-brand-color3: color-mix(in srgb, var(--ctp-cfg-brand-color), #fff 20%);
-
   --jp-accent-color0: color-mix(in srgb, var(--ctp-cfg-accent-color), #000 10%);
   --jp-accent-color1: var(--ctp-cfg-accent-color);
   --jp-accent-color2: color-mix(in srgb, var(--ctp-cfg-accent-color), #fff 10%);
