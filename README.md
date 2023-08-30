@@ -14,34 +14,55 @@
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/preview.webp"/>
+	<img src="./assets/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/latte.webp"/>
+<img src="./assets/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/frappe.webp"/>
+<img src="./assets/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/macchiato.webp"/>
+<img src="./assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/mocha.webp"/>
+<img src="./assets/mocha.webp"/>
 </details>
 
 ## Usage
 
-1. Clone this repository locally
-2. Open the app's settings
-3. Select `import theme` and browse to where you cloned Catppuccin
-4. Select it
+1. Install the JupyterLab extension: `pip install catppuccin-jupyterlab`.
+2. Start/restart JupyterLab (`jupyter lab`). If it is already opened, you can reload it by executing "Reset Application State" in the Command Palette (`Ctrl + Shift + C`).
+3. Go to the `Settings > Theme` menu option and choose the desired flavor.
+
+## Customization
+
+### Brand Color
+
+It is possible to choose any of the Catppucin colors as your "brand" color. The default is `mauve`, but you can choose your favorite to make it your way!
+
+<img src="./assets/mocha-brand.webp"/>
+
+You can specify the colors by going to the `Settings > Settings Editor` (or `Ctrl + ,`), going to the `Theme - Catppuccin` section, then choosing your desired color in the lists of the dropdown menu.
+
+<img src="./assets/settings.webp"/>
+
+Alternatively, you can specify the json with the settings:
+```json
+{
+    "brandColor": "mauve",
+    "accentColor": "green"
+}
+```
+
+*NOTE*: besides the "brand" color it is also possible to set the "accent" color (default is `green`), but it rarelly appears in the JupyterLab interface.
 
 ## 💝 Thanks to
 
