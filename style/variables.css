@@ -279,9 +279,17 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Rendermime styles */
 
-  --jp-rendermime-error-background: color-mix(in srgb, var(--ctp-plt-red), var(--ctp-plt-base) 75%);
+  --jp-rendermime-error-background: color-mix(
+    in srgb,
+    var(--ctp-plt-red),
+    var(--ctp-plt-base) 75%
+  );
   --jp-rendermime-table-row-background: var(--ctp-plt-mantle);
-  --jp-rendermime-table-row-hover-background: color-mix(in srgb, var(--ctp-plt-blue), var(--ctp-plt-base) 50%);
+  --jp-rendermime-table-row-hover-background: color-mix(
+    in srgb,
+    var(--ctp-plt-blue),
+    var(--ctp-plt-base) 50%
+  );
 
   /* Dialog specific styles */
 
