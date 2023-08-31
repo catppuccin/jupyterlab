@@ -60,7 +60,8 @@ Alternatively, you can specify the json with the settings:
 }
 ```
 
-*NOTE*: besides the "brand" color it is also possible to set the "accent" color (default is `green`), but it rarelly appears in the JupyterLab interface.
+> [!NOTE]
+> Besides the "brand" color it is also possible to set the "accent" color (default is green), but it rarely appears in the JupyterLab interface.
 
 ## 💝 Thanks to
 
