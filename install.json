@@ -1,5 +1,5 @@
 {
   "packageManager": "python",
-  "packageName": "catppuccin-jupyterlab",
-  "uninstallInstructions": "Use your Python package manager (pip, conda, etc.) to uninstall the package catppuccin-jupyterlab"
+  "packageName": "catppuccin_jupyterlab",
+  "uninstallInstructions": "Use your Python package manager (pip, conda, etc.) to uninstall the package catppuccin_jupyterlab"
 }

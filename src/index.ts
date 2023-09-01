@@ -10,10 +10,10 @@ import { ISettingRegistry } from '@jupyterlab/settingregistry';
 import { CatppuccinPalettes } from './palettes';
 
 /**
- * Initialization data for the catppuccin-jupyterlab extension.
+ * Initialization data for the catppuccin_jupyterlab extension.
  */
 const plugin: JupyterFrontEndPlugin<void> = {
-  id: 'catppuccin-jupyterlab:plugin',
+  id: 'catppuccin_jupyterlab:plugin',
   description: '📊 Soothing pastel theme for JupyterLab.',
   autoStart: true,
   requires: [IThemeManager],
@@ -23,7 +23,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
     manager: IThemeManager,
     settingRegistry: ISettingRegistry | null
   ) => {
-    const style = 'catppuccin-jupyterlab/index.css';
+    const style = 'catppuccin_jupyterlab/index.css';
     const palettes = new CatppuccinPalettes();
 
     let brandColor = 'mauve';
@@ -37,12 +37,12 @@ const plugin: JupyterFrontEndPlugin<void> = {
             brandColor = settings.get('brandColor').composite as string;
             accentColor = settings.get('accentColor').composite as string;
             console.debug(
-              `catppuccin-jupyterlab settings loaded. Brand color is '${brandColor}', Accent color is '${accentColor}'`
+              `catppuccin_jupyterlab settings loaded. Brand color is '${brandColor}', Accent color is '${accentColor}'`
             );
           })
           .catch(reason => {
             console.error(
-              'Failed to load settings for catppuccin-jupyterlab.',
+              'Failed to load settings for catppuccin_jupyterlab.',
               reason
             );
           });

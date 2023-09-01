@@ -32,23 +32,23 @@ source = "nodejs"
 fields = ["description", "authors", "urls"]
 
 [tool.hatch.build.targets.sdist]
-artifacts = ["catppuccin-jupyterlab/labextension"]
+artifacts = ["catppuccin_jupyterlab/labextension"]
 exclude = [".github", "binder"]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"catppuccin-jupyterlab/labextension" = "share/jupyter/labextensions/catppuccin-jupyterlab"
-"install.json" = "share/jupyter/labextensions/catppuccin-jupyterlab/install.json"
+"catppuccin_jupyterlab/labextension" = "share/jupyter/labextensions/catppuccin_jupyterlab"
+"install.json" = "share/jupyter/labextensions/catppuccin_jupyterlab/install.json"
 
 [tool.hatch.build.hooks.version]
-path = "catppuccin-jupyterlab/_version.py"
+path = "catppuccin_jupyterlab/_version.py"
 
 [tool.hatch.build.hooks.jupyter-builder]
 dependencies = ["hatch-jupyter-builder>=0.5"]
 build-function = "hatch_jupyter_builder.npm_builder"
 ensured-targets = [
-    "catppuccin-jupyterlab/labextension/package.json",
+    "catppuccin_jupyterlab/labextension/package.json",
 ]
-skip-if-exists = ["catppuccin-jupyterlab/labextension/static/style.js"]
+skip-if-exists = ["catppuccin_jupyterlab/labextension/static/style.js"]
 
 [tool.hatch.build.hooks.jupyter-builder.build-kwargs]
 build_cmd = "build:prod"
@@ -58,7 +58,7 @@ npm = ["jlpm"]
 build_cmd = "install:extension"
 npm = ["jlpm"]
 source_dir = "src"
-build_dir = "catppuccin-jupyterlab/labextension"
+build_dir = "catppuccin_jupyterlab/labextension"
 
 [tool.jupyter-releaser.options]
 version_cmd = "hatch version"

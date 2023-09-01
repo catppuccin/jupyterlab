@@ -32,7 +32,7 @@ jobs:
         python -m pip install .[test]
 
         jupyter labextension list
-        jupyter labextension list 2>&1 | grep -ie "catppuccin-jupyterlab.*OK"
+        jupyter labextension list 2>&1 | grep -ie "catppuccin_jupyterlab.*OK"
         python -m jupyterlab.browser_check
 
     - name: Package the extension
@@ -41,7 +41,7 @@ jobs:
 
         pip install build
         python -m build
-        pip uninstall -y "catppuccin-jupyterlab" jupyterlab
+        pip uninstall -y "catppuccin_jupyterlab" jupyterlab
 
     - name: Upload extension packages
       uses: actions/upload-artifact@v3
@@ -74,7 +74,7 @@ jobs:
 
 
         jupyter labextension list
-        jupyter labextension list 2>&1 | grep -ie "catppuccin-jupyterlab.*OK"
+        jupyter labextension list 2>&1 | grep -ie "catppuccin_jupyterlab.*OK"
         python -m jupyterlab.browser_check --no-browser-test
 
 

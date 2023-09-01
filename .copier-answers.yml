@@ -8,11 +8,11 @@ file_extension: ''
 has_binder: false
 has_settings: false
 kind: theme
-labextension_name: catppuccin-jupyterlab
+labextension_name: catppuccin_jupyterlab
 mimetype: ''
 mimetype_name: ''
 project_short_description: 📊 Soothing pastel theme for JupyterLab.
-python_name: catppuccin-jupyterlab
+python_name: catppuccin_jupyterlab
 repository: https://github.com/gabrielmagno/jupyterlab
 test: false
 viewer_name: ''
