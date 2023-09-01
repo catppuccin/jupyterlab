@@ -402,21 +402,29 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-icon-contrast-color3: var(--ctp-plt-blue);
 
   /* Button colors */
-  --jp-accept-color-normal: var(--ctp-plt-blue);
-  --jp-accept-color-hover: color-mix(in srgb, var(--ctp-plt-blue), #000 15%);
-  --jp-accept-color-active: color-mix(in srgb, var(--ctp-plt-blue), #000 30%);
+  --jp-accept-color-normal: var(--ctp-cfg-brand-color);
+  --jp-accept-color-hover: color-mix(
+    in srgb,
+    var(--ctp-cfg-brand-color),
+    #000 15%
+  );
+  --jp-accept-color-active: color-mix(
+    in srgb,
+    var(--ctp-cfg-brand-color),
+    #000 30%
+  );
   --jp-warn-color-normal: var(--ctp-plt-red);
   --jp-warn-color-hover: color-mix(in srgb, var(--ctp-plt-red), #000 15%);
   --jp-warn-color-active: color-mix(in srgb, var(--ctp-plt-red), #000 30%);
-  --jp-reject-color-normal: var(--ctp-plt-overlay2);
+  --jp-reject-color-normal: var(--ctp-plt-surface0);
   --jp-reject-color-hover: color-mix(
     in srgb,
-    var(--ctp-plt-overlay2),
+    var(--ctp-plt-surface0),
     #000 15%
   );
   --jp-reject-color-active: color-mix(
     in srgb,
-    var(--ctp-plt-overlay2),
+    var(--ctp-plt-surface0),
     #000 30%
   );
 
