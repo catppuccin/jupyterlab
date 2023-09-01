@@ -1553,9 +1553,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"catppuccin_jupyterlab@workspace:.":
+"catppuccin-jupyterlab@workspace:.":
   version: 0.0.0-use.local
-  resolution: "catppuccin_jupyterlab@workspace:."
+  resolution: "catppuccin-jupyterlab@workspace:."
   dependencies:
     "@jupyterlab/application": ^3.0.0 || ^4.0.0
     "@jupyterlab/apputils": ^3.0.0 || ^4.0.0

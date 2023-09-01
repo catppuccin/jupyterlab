@@ -3,6 +3,6 @@ node_modules
 **/lib
 **/package.json
 !/package.json
-catppuccin_jupyterlab
+catppuccin-jupyterlab
 examples
 README.md
