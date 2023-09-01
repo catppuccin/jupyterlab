@@ -1,6 +1,6 @@
 {
     "name": "catppuccin_jupyterlab",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "description": "📊 Soothing pastel theme for JupyterLab.",
     "keywords": [
         "jupyter",
