@@ -466,6 +466,10 @@ button.jp-mod-styled.jp-mod-reject {
 
 /* Background color of input fields, that mostly appear on Settings menus */
 
+/* NOTE: disable styelint because we are specifying
+ * classes already defined in Jupyter, so we cannot rename it */
+
+/* stylelint-disable selector-class-pattern */
 .jp-FormGroup-content fieldset .jp-inputFieldWrapper input,
 .jp-FormGroup-content fieldset .jp-inputFieldWrapper select,
 .jp-FormGroup-content fieldset .jp-inputFieldWrapper textarea {
@@ -483,3 +487,4 @@ button.jp-mod-styled.jp-mod-reject {
 .jp-FormGroup-content fieldset select:hover:not(:focus) {
   background-color: var(--ctp-plt-surface1);
 }
+/* stylelint-enable selector-class-pattern */
