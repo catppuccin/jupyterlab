@@ -475,11 +475,11 @@ button.jp-mod-styled.jp-mod-reject {
 .jp-FormGroup-content fieldset input:focus,
 .jp-FormGroup-content fieldset select:focus {
   outline: var(--jp-border-width) solid var(--ctp-cfg-brand-color);
-  box-shadow: inset 0 0 4px color-mix(in srgb, var(--ctp-cfg-brand-color), #000 15%);
+  box-shadow: inset 0 0 4px
+    color-mix(in srgb, var(--ctp-cfg-brand-color), #000 15%);
 }
 
 .jp-FormGroup-content fieldset input:hover:not(:focus),
 .jp-FormGroup-content fieldset select:hover:not(:focus) {
   background-color: var(--ctp-plt-surface1);
 }
-
