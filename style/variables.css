@@ -416,15 +416,15 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-warn-color-normal: var(--ctp-plt-red);
   --jp-warn-color-hover: color-mix(in srgb, var(--ctp-plt-red), #000 15%);
   --jp-warn-color-active: color-mix(in srgb, var(--ctp-plt-red), #000 30%);
-  --jp-reject-color-normal: var(--ctp-plt-surface0);
+  --jp-reject-color-normal: var(--ctp-plt-surface1);
   --jp-reject-color-hover: color-mix(
     in srgb,
-    var(--ctp-plt-surface0),
+    var(--ctp-plt-surface1),
     #000 15%
   );
   --jp-reject-color-active: color-mix(
     in srgb,
-    var(--ctp-plt-surface0),
+    var(--ctp-plt-surface1),
     #000 30%
   );
 
