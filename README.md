@@ -40,6 +40,8 @@
 2. Start/restart JupyterLab (`jupyter lab`). If it is already opened, you can reload it by executing "Reset Application State" in the Command Palette (`Ctrl + Shift + C`).
 3. Go to the `Settings > Theme` menu option and choose the desired flavor.
 
+It supports both JupyterLab v3 and v4.
+
 ## Customization
 
 ### Brand Color
