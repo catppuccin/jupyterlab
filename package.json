@@ -7,9 +7,9 @@
         "jupyterlab",
         "jupyterlab-extension"
     ],
-    "homepage": "https://github.com/gabrielmagno/jupyterlab",
+    "homepage": "https://github.com/catppuccin/jupyterlab",
     "bugs": {
-        "url": "https://github.com/gabrielmagno/jupyterlab/issues"
+        "url": "https://github.com/catppuccin/jupyterlab/issues"
     },
     "license": "BSD-3-Clause",
     "author": {
@@ -25,7 +25,7 @@
     "types": "lib/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/gabrielmagno/jupyterlab.git"
+        "url": "https://github.com/catppuccin/jupyterlab.git"
     },
     "scripts": {
         "build": "jlpm build:lib && jlpm build:labextension:dev",
