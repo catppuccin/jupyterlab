@@ -6,32 +6,32 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/gabrielmagno/jupyterlab/stargazers"><img src="https://img.shields.io/github/stars/gabrielmagno/jupyterlab?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/gabrielmagno/jupyterlab/issues"><img src="https://img.shields.io/github/issues/gabrielmagno/jupyterlab?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/gabrielmagno/jupyterlab/contributors"><img src="https://img.shields.io/github/contributors/gabrielmagno/jupyterlab?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/jupyterlab/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/jupyterlab?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/jupyterlab/issues"><img src="https://img.shields.io/github/issues/catppuccin/jupyterlab?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/jupyterlab/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/jupyterlab?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/gabrielmagno/jupyterlab/main/assets/preview.webp"/>
+	<img src="https://raw.githubusercontent.com/catppuccin/jupyterlab/main/assets/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/gabrielmagno/jupyterlab/main/assets/latte.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/jupyterlab/main/assets/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/gabrielmagno/jupyterlab/main/assets/frappe.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/jupyterlab/main/assets/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/gabrielmagno/jupyterlab/main/assets/macchiato.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/jupyterlab/main/assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/gabrielmagno/jupyterlab/main/assets/mocha.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/jupyterlab/main/assets/mocha.webp"/>
 </details>
 
 ## Usage
@@ -48,11 +48,11 @@ It supports both JupyterLab v3 and v4.
 
 It is possible to choose any of the Catppucin colors as your "brand" color. The default is `mauve`, but you can choose your favorite to make it your way!
 
-<img src="https://raw.githubusercontent.com/gabrielmagno/jupyterlab/main/assets/mocha-brand.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/jupyterlab/main/assets/mocha-brand.webp"/>
 
 You can specify the colors by going to the `Settings > Settings Editor` (or `Ctrl + ,`), going to the `Theme - Catppuccin` section, then choosing your desired color in the lists of the dropdown menu.
 
-<img src="https://raw.githubusercontent.com/gabrielmagno/jupyterlab/main/assets/settings.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/jupyterlab/main/assets/settings.webp"/>
 
 Alternatively, you can specify the json with the settings:
 ```json
