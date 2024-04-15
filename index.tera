@@ -1,3 +1,7 @@
+---
+whiskers:
+  version: "2.0.0"
+---
 import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
@@ -51,49 +55,20 @@ const plugin: JupyterFrontEndPlugin<void> = {
 
     loadSettings(settingRegistry);
 
+    {%- for id, flavor in flavors %}
+
     manager.register({
-      name: 'Catppuccin Latte',
-      isLight: true,
+      name: 'Catppuccin {{flavor.name}}',
+      isLight: {{not flavor.dark}},
       load: () => {
-        palettes.setColorsLatte();
+        palettes.setColors{{flavor.name | slugify | capitalize}}();
         palettes.setConfigColors(brandColor, accentColor);
         return manager.loadCSS(style);
       },
       unload: () => Promise.resolve(undefined)
     });
 
-    manager.register({
-      name: 'Catppuccin Frappé',
-      isLight: false,
-      load: () => {
-        palettes.setColorsFrappe();
-        palettes.setConfigColors(brandColor, accentColor);
-        return manager.loadCSS(style);
-      },
-      unload: () => Promise.resolve(undefined)
-    });
-
-    manager.register({
-      name: 'Catppuccin Macchiato',
-      isLight: false,
-      load: () => {
-        palettes.setColorsMacchiato();
-        palettes.setConfigColors(brandColor, accentColor);
-        return manager.loadCSS(style);
-      },
-      unload: () => Promise.resolve(undefined)
-    });
-
-    manager.register({
-      name: 'Catppuccin Mocha',
-      isLight: false,
-      load: () => {
-        palettes.setColorsMocha();
-        palettes.setConfigColors(brandColor, accentColor);
-        return manager.loadCSS(style);
-      },
-      unload: () => Promise.resolve(undefined)
-    });
+    {%- endfor %}
   }
 };
 
