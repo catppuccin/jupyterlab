@@ -18,3 +18,4 @@ clean:
 all: setup
     {{whiskers_cmd}} jupyterlab.tera > {{output}}/palettes.ts
     {{whiskers_cmd}} index.tera > {{output}}/index.ts
+    jlpm run prettier

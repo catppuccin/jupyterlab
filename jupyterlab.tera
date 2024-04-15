@@ -17,10 +17,7 @@ export class CatppuccinPalettes {
   {%- for id, flavor in flavors %}
 
   setColors{{flavor.name | slugify | capitalize}}() {
-    document.documentElement.style.setProperty(
-      '--ctp-plt-rosewater',
-      '#{{flavor.colors.rosewater.hex}}'
-    );
+    document.documentElement.style.setProperty('--ctp-plt-rosewater', '#{{flavor.colors.rosewater.hex}}');
     document.documentElement.style.setProperty('--ctp-plt-flamingo', '#{{flavor.colors.flamingo.hex}}');
     document.documentElement.style.setProperty('--ctp-plt-pink', '#{{flavor.colors.pink.hex}}');
     document.documentElement.style.setProperty('--ctp-plt-mauve', '#{{flavor.colors.mauve.hex}}');
