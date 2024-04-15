@@ -1,0 +1,26 @@
+---
+whiskers:
+  version: "2.0.0"
+---
+export class CatppuccinPalettes {
+  setConfigColors(brandColor: string, accentColor: string) {
+    document.documentElement.style.setProperty(
+      '--ctp-cfg-brand-color',
+      `var(--ctp-plt-${brandColor})`
+    );
+    document.documentElement.style.setProperty(
+      '--ctp-cfg-accent-color',
+      `var(--ctp-plt-${accentColor})`
+    );
+  }
+
+  {%- for id, flavor in flavors %}
+
+  setColors{{flavor.name | slugify | capitalize}}() {
+    {%- for name, color in flavor.colors -%}
+    document.documentElement.style.setProperty('--ctp-plt-{{name}}', '#{{color.hex}}');
+    {%- endfor %}
+  }
+
+  {%- endfor %}
+}
