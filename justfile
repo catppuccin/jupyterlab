@@ -14,7 +14,7 @@ setup:
 clean:
     rm -fv {{output}}/*
 
-# Generate all four flavors
+# Generate all flavors
 all: setup
     {{whiskers_cmd}} jupyterlab.tera > {{output}}/palettes.ts
     {{whiskers_cmd}} index.tera > {{output}}/index.ts
