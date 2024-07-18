@@ -327,6 +327,11 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-editor-selected-focused-background: var(--ctp-plt-surface2);
   --jp-editor-cursor-color: var(--ctp-plt-rosewater);
 
+  /* Vim block cursor (applies only if vim extension installed)
+  https://github.com/jupyterlab-contrib/jupyterlab-vim
+  */
+  --jp-vim-cursor-color: var(--ctp-plt-rosewater);
+
   /* Code mirror specific styles */
 
   --jp-mirror-editor-keyword-color: var(--ctp-plt-red);
