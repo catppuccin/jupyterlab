@@ -36,7 +36,9 @@
 
 ## Usage
 
-1. Install the JupyterLab extension: `pip install catppuccin-jupyterlab`.
+1. Install the JupyterLab extension using `pip` or `conda`:
+   - `pip install catppuccin-jupyterlab` or
+   - `conda install -c conda-forge catppuccin-jupyterlab`.
 2. Start/restart JupyterLab (`jupyter lab`). If it is already opened, you can reload it by executing "Reset Application State" in the Command Palette (`Ctrl + Shift + C`).
 3. Go to the `Settings > Theme` menu option and choose the desired flavor.
 
