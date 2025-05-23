@@ -7,6 +7,11 @@ name = "catppuccin-jupyterlab"
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.8"
+version = "0.2.4"
+description = "📊 Soothing pastel theme for JupyterLab."
+authors = [{ name = "Gabriel Magno", email = "gabrielmagno1@gmail.com" }]
+keywords = ["jupyter", "jupyterlab", "jupyterlab-extension"]
+urls = { homepage = "https://github.com/catppuccin/jupyterlab" }
 classifiers = [
     "Framework :: Jupyter",
     "Framework :: Jupyter :: JupyterLab",
@@ -23,16 +28,9 @@ classifiers = [
 ]
 dependencies = [
 ]
-dynamic = ["version", "description", "authors", "urls", "keywords"]
 
 [tool.hatch.version]
 source = "nodejs"
-
-[tool.setuptools.dynamic]
-description = {file = "README.md"}
-
-[tool.hatch.metadata.hooks.nodejs]
-fields = ["description", "authors", "urls"]
 
 [tool.hatch.build.targets.sdist]
 artifacts = ["catppuccin_jupyterlab/labextension"]
